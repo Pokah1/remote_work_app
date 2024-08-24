@@ -5,6 +5,11 @@ import databizIcon from '../assets/client-databiz.svg';
 import audiophileIcon from '../assets/client-audiophile.svg';
 import meetIcon from '../assets/client-meet.svg';
 import makerIcon from '../assets/client-maker.svg';
+import arrowIcon from '../assets/arrow-down.svg'
+import planningIcon from '../assets/planning.svg'
+import todoIcon from '../assets/todo.svg'
+import reminderIcon from '../assets/reminder.svg'
+import calenderIcon from '../assets/calender.svg'
 
 const HeaderPage = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,30 +42,32 @@ const HeaderPage = () => {
         >
           {/* Features Dropdown */}
           <div className="relative group">
-            <button className="text-gray-700 hover:text-black">
-              Features ↓
+            <button className="text-gray-700 hover:text-black inline-flex items-center ">
+              Features <img src={arrowIcon} alt="arrow-down"  className="w-3 h-2 ml-1" />
             </button>
             <div className="absolute left-0 top-full hidden group-hover:flex flex-col focus-within:flex w-48 bg-white border border-gray-200 rounded-lg shadow-lg p-2 z-30">
-              <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                📜 Todo List
+              <a href="#" className=" px-4 py-2 text-gray-700 hover:bg-gray-100  inline-flex items-center ">
+               <img src={todoIcon} alt="todoIcon" className='mr-2' /> Todo List
               </a>
-              <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                📆 Calendar
+              <a href="#" className="px-4 py-2 text-gray-700 hover:bg-gray-100 inline-flex items-center">
+           <img src={calenderIcon} alt="calenderIcon" className='mr-2' /> Calendar
               </a>
-              <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                🔔 Reminders
+              <a href="#" className=" px-4 py-2 text-gray-700 hover:bg-gray-100 inline-flex items-center">
+              <img src={reminderIcon} alt="reminderIcon " className='mr-2'/>Reminders
               </a>
-              <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                🎯 Planning
+              <a href="#" className=" px-4 py-2 text-gray-700 hover:bg-gray-100 inline-flex items-center ">
+               <img src={planningIcon} alt="planning Icon" className='mr-2'/>Planning
               </a>
             </div>
           </div>
 
           {/* Company Dropdown */}
           <div className="relative group">
-            <button className="text-gray-700 hover:text-black">
-              Company ↓
-            </button>
+          <button className="text-gray-700 hover:text-black inline-flex items-center space-x-1">
+  <span>Company</span>
+  <img src={arrowIcon} alt="arrow-down" className="w-3 h-2" />
+</button>
+
             <div className="absolute left-0 top-full hidden group-hover:flex flex-col focus-within:flex w-48 bg-white border border-gray-200 rounded-lg shadow-lg p-2 z-30">
               <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
                 History
