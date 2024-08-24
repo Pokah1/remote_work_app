@@ -38,7 +38,7 @@ const HeaderPage = () => {
           style={{ backgroundColor: '#FAF9F6' }} 
           className={`${
             isMenuOpen ? 'flex' : 'hidden'
-          } flex-col md:flex-row md:flex items-center md:space-x-6 text-lg md:ml-8 absolute md:relative top-[80px] md:top-0 right-0 md:w-auto w-[40%] h-auto  z-20 md:z-auto transition-all duration-300 md:space-y-0 space-y-4 p-4 md:p-0 rounded-md`}
+          } flex-col md:flex-row md:flex items-center md:space-x-6 text-lg md:ml-5 absolute md:relative top-[80px] md:top-0 right-0 md:w-auto w-[40%] h-auto  z-20 md:z-auto transition-all duration-300 md:space-y-0 space-y-4 p-4 md:p-0 rounded-md`}
         >
           {/* Features Dropdown */}
           <div className="relative group">
@@ -46,16 +46,16 @@ const HeaderPage = () => {
               Features <img src={arrowIcon} alt="arrow-down"  className="w-3 h-2 ml-1" />
             </button>
             <div className="absolute left-0 top-full hidden group-hover:flex flex-col focus-within:flex w-48 bg-white border border-gray-200 rounded-lg shadow-lg p-2 z-30">
-              <a href="#" className=" px-4 py-2 text-gray-700 hover:bg-gray-100  inline-flex items-center ">
-               <img src={todoIcon} alt="todoIcon" className='mr-2' /> Todo List
+              <a href="#" className=" text-base px-4 py-2 text-gray-700 hover:bg-gray-100  inline-flex items-center ">
+               <img src={todoIcon} alt="todoIcon" className='mr-2'/> Todo List
               </a>
-              <a href="#" className="px-4 py-2 text-gray-700 hover:bg-gray-100 inline-flex items-center">
+              <a href="#" className="px-4 py-2 text-gray-700 hover:bg-gray-100 inline-flex items-center text-base">
            <img src={calenderIcon} alt="calenderIcon" className='mr-2' /> Calendar
               </a>
-              <a href="#" className=" px-4 py-2 text-gray-700 hover:bg-gray-100 inline-flex items-center">
+              <a href="#" className=" px-4 py-2 text-gray-700 hover:bg-gray-100 inline-flex items-center text-base">
               <img src={reminderIcon} alt="reminderIcon " className='mr-2'/>Reminders
               </a>
-              <a href="#" className=" px-4 py-2 text-gray-700 hover:bg-gray-100 inline-flex items-center ">
+              <a href="#" className=" px-4 py-2 text-gray-700 hover:bg-gray-100 inline-flex items-center text-base">
                <img src={planningIcon} alt="planning Icon" className='mr-2'/>Planning
               </a>
             </div>
@@ -69,13 +69,13 @@ const HeaderPage = () => {
 </button>
 
             <div className="absolute left-0 top-full hidden group-hover:flex flex-col focus-within:flex w-48 bg-white border border-gray-200 rounded-lg shadow-lg p-2 z-30">
-              <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+              <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-base">
                 History
               </a>
-              <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+              <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-base">
                 Our Team
               </a>
-              <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+              <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100 text-base">
                 Blog
               </a>
             </div>

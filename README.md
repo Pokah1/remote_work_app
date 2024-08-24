@@ -1,50 +1,119 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# Remote Work Website - UI Interface
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a simple, responsive user interface for a remote work website. It includes a navigation menu, dropdowns, a hero section with an image and call-to-action button, and company logos, all built using **Vite**, **React**, and **TypeScript**.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Responsive Navigation**: Includes a hamburger menu for mobile screens and dropdowns for "Features" and "Company".
+- **Hero Section**: Displays a headline, description, call-to-action button, and hero image.
+- **Client Logos**: Shows logos of companies associated with the platform.
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **React**: JavaScript library for building user interfaces.
+- **Vite**: Next-generation frontend tooling for fast development.
+- **TypeScript**: Adds type safety to JavaScript code.
+  
+## Project Setup
+
+### Prerequisites
+
+Ensure you have the following installed on your system:
+
+- **Node.js** (v14 or later)
+- **npm** or **yarn**
+
+### Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/remote-work-ui.git
+   cd remote-work-ui
+   ```
+
+2. **Install dependencies**:
+
+   Using npm:
+   ```bash
+   npm install
+   ```
+
+   Using yarn:
+   ```bash
+   yarn install
+   ```
+
+### Running the Project
+
+Start the development server:
+
+- Using npm:
+  ```bash
+  npm run dev
+  ```
+
+- Using yarn:
+  ```bash
+  yarn dev
+  ```
+
+
+### Building for Production
+
+To create an optimized production build:
+
+- Using npm:
+  ```bash
+  npm run build
+  ```
+
+- Using yarn:
+  ```bash
+  yarn build
+  ```
+
+### Previewing the Build
+
+To preview the production build locally:
+
+- Using npm:
+  ```bash
+  npm run preview
+  ```
+
+- Using yarn:
+  ```bash
+  yarn preview
+  ```
+
+## Folder Structure
+
+```
+├── public              # Static assets
+├── src
+│   ├── assets          # Images and icons
+│   ├── components      # React components
+│   ├── main.tsx        # Entry point of the application
+│   ├── App.tsx         # Main app component
+│   └── styles          # CSS styles (optional)
+├── index.html          # Main HTML file
+└── README.md           # Project documentation
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Features Overview
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **Responsive Design**: The layout adjusts based on screen size for a consistent experience across devices.
+- **Dropdown Menus**: Interactive dropdowns for "Features" and "Company".
+- **Image Handling**: Utilizes responsive images for a polished interface.
+- **Mobile-First Approach**: Optimized for both mobile and desktop users.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Customization
+
+- **Icons**: You can replace the default icons located in the `src/assets` directory with your own.
+- **Styling**: Modify styles directly in the components or create separate CSS files under `src/styles`.
+
+
+
